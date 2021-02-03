@@ -1,0 +1,27 @@
+package br.senai.sp.model;
+
+public class academia {
+	private string nome;
+	private char sexo;
+	private double peso;
+	private double altura;
+	private int niveldeatividade;
+	
+	
+	public void setNome(string nome) {
+		this.nome = nome;
+	}
+	
+	public string getNome(){
+		return this.nome;
+	}
+	
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
+	}
+	
+	public char getSexo(){
+		return this.sexo;
+	}
+
+}
