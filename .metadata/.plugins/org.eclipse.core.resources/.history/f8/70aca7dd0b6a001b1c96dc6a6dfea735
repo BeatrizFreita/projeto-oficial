@@ -124,19 +124,5 @@ public class Academiaa {
 	public double getcalcularNcd() {
 		double ncd = 0;
 		
-		if(this.sexo  "F") {
-			
-			//Com base na idade 
-			
-		if(this.getIdade() > 18 && this.getIdade() < 30) {
-			ncd = 14.7 * this.peso + 496;
-		}else if (this.getIdade() >= 31 && this.getIdade() <= 60) {
-			ncd = 8.7 * this.peso + 829;
-		}else {
-			ncd = 10.5 * this.peso + 596;
-		}
-		
-		
-		}
 	}
 }

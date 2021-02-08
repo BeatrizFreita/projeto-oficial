@@ -12,7 +12,7 @@ public class Academiaa {
 	private int niveldeatividade;
 	private LocalDate datadenascimento;
 	private String statusimc;
-	private double ncd;
+	
 	
 	
 	public void setNome(String nome) {
@@ -77,15 +77,6 @@ public class Academiaa {
 		return this.statusimc;
 	}
 	
-	public void setNcd(double ncd) {
-		this.ncd = ncd;
-	}
-	
-	public double getNcd() {
-		return this.ncd;
-	}
-	
-	
 	
 			// CALCULOS IDADE DO ALUNO 
 	
@@ -121,22 +112,8 @@ public class Academiaa {
 	}
 	
 		// CALCULAR O NCD DO ALUNO 
-	public double getcalcularNcd() {
+	public double getNcd() {
 		double ncd = 0;
 		
-		if(this.sexo  "F") {
-			
-			//Com base na idade 
-			
-		if(this.getIdade() > 18 && this.getIdade() < 30) {
-			ncd = 14.7 * this.peso + 496;
-		}else if (this.getIdade() >= 31 && this.getIdade() <= 60) {
-			ncd = 8.7 * this.peso + 829;
-		}else {
-			ncd = 10.5 * this.peso + 596;
-		}
-		
-		
-		}
 	}
 }
