@@ -120,11 +120,11 @@ public class Academiaa {
 		}
 	}
 	
-		// CALCULAR O NCD DO ALUNO 
-	public double getcalcularNcd() {
+		// CALCULAR O NCD MULHER
+	public double getCalcularNcd() {
 		double ncd = 0;
 		
-		if(this.sexo  "F") {
+		if (this.sexo == "F") {
 			
 			//Com base na idade 
 			
@@ -137,6 +137,19 @@ public class Academiaa {
 		}
 		
 		
+		//Com base na atividade
+		
+		if (this.niveldeatividade == NivelDeAtividade.LEVE) {
+			ncd = 1.6;
+		} else if (this.niveldeatividade == NivelDeAtividade.MODERADO) {
+			ncd = 1.6;
+		}else if (this.niveldeatividade == NivelDeAtividade.INTENSO) {
+			ncd = 1.8;
 		}
+		
+		
+		}
+		return ncd;
+		
 	}
 }
