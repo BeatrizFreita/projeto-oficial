@@ -124,11 +124,11 @@ public class Academiaa {
 	public double getCalcularNcd() {
 		double ncd = 0;
 		
-		if (this.sexo == "F") {
+		if (this.sexo == 'F') {
 			
 			//Com base na idade 
 			
-		if(this.getIdade() > 18 && this.getIdade() < 30) {
+		if (this.getIdade() > 18 && this.getIdade() < 31) {
 			ncd = 14.7 * this.peso + 496;
 		}else if (this.getIdade() >= 31 && this.getIdade() <= 60) {
 			ncd = 8.7 * this.peso + 829;
@@ -136,7 +136,7 @@ public class Academiaa {
 			ncd = 10.5 * this.peso + 596;
 		}
 		
-		
+	
 		//Com base na atividade
 		
 		if (this.niveldeatividade == NivelDeAtividade.LEVE) {
@@ -148,8 +148,39 @@ public class Academiaa {
 		}
 		
 		
-		}
 		return ncd;
 		
+		}
+	}
+	
+	// NCD HOMEM
+	
+	public double getCalcularNcd1() {
+		double ncd = 0;
+		
+		if(this.sexo == 'M') {
+			
+			// De acordo com a idade 
+			
+			if (this.getIdade() > 18 && this.getIdade() < 31) {
+				ncd = 15.3 * this.peso + 679;
+			}else if (this.getIdade() >= 31 && this.getIdade() <= 61) {
+				ncd = 11.6 * this.peso + 879;
+			}else {
+				ncd = 13.5 * this.peso + 487;
+			}
+			
+			// De acordo com o nivel de atividade
+			
+				if(this.niveldeatividade == NivelDeAtividade.LEVE1) {
+					ncd = 1.5;
+				}else if (this.niveldeatividade == NivelDeAtividade.MODERADO1) {
+					ncd = 1.8;
+				}else if (this.niveldeatividade == NivelDeAtividade.INTENSO1) {
+					ncd = 2.1;
+				}
+				
+				return ncd;
+		}
 	}
 }
